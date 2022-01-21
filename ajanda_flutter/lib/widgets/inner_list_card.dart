@@ -5,8 +5,6 @@ import 'package:ajanda_flutter/widgets/update_entry_dialog.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-// ekranda görünen görev kartlarının işlevi silme butonu-basınca full görünümün açılması
-
 class InnerListCard extends StatelessWidget {
   const InnerListCard({
     Key? key,
@@ -33,7 +31,6 @@ class InnerListCard extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              // ana ekranda görünen kartların üzerindeki silme butonu
               children: [
                 Text(
                   '${formatDateFromTimestamp(diary.entryTime)}',
@@ -42,7 +39,6 @@ class InnerListCard extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.bold),
                 ),
-                // silme butonu
                 TextButton.icon(
                     icon: Icon(Icons.delete_forever, color: Colors.grey),
                     onPressed: () {
@@ -95,7 +91,6 @@ class InnerListCard extends StatelessWidget {
               )
             ],
           ),
-          // her bir kartın üstüne basında açılan düzenleme sayfası
           onTap: () {
             showDialog(
               context: context,
