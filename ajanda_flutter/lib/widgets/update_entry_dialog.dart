@@ -8,8 +8,6 @@ import 'package:universal_html/html.dart';
 import 'package:ajanda_flutter/widgets/inner_list_card.dart';
 import 'package:ajanda_flutter/widgets/delete_entry_dialog.dart';
 
-// görevlerin düzenleme ekranı
-
 class UpdateEntryDialog extends StatefulWidget {
   const UpdateEntryDialog({
     Key? key,
@@ -49,7 +47,6 @@ class _UpdateEntryDialogState extends State<UpdateEntryDialog> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                //discard
                 Padding(
                   padding: const EdgeInsets.all(18.0),
                   child: TextButton(
@@ -60,7 +57,6 @@ class _UpdateEntryDialogState extends State<UpdateEntryDialog> {
                     },
                   ),
                 ),
-                // done
                 Padding(
                   padding: const EdgeInsets.all(18.0),
                   child: TextButton(
@@ -115,7 +111,6 @@ class _UpdateEntryDialogState extends State<UpdateEntryDialog> {
                   Container(
                     height: MediaQuery.of(context).size.height,
                     color: Colors.white12,
-                    //silme butonu
                     child: Column(
                       children: [
                         Padding(
@@ -142,7 +137,6 @@ class _UpdateEntryDialogState extends State<UpdateEntryDialog> {
                   SizedBox(
                     width: 100,
                   ),
-                  // tarih
                   Expanded(
                     flex: 3,
                     child: Column(
