@@ -2,7 +2,6 @@ import 'package:ajanda_flutter/model/user.dart';
 import 'package:ajanda_flutter/services/service.dart';
 import 'package:flutter/material.dart';
 
-//kullanıcı güncelleme ekranı
 
 class UpdateUserProfileDialog extends StatelessWidget {
   const UpdateUserProfileDialog({
