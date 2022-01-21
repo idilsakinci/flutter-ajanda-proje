@@ -8,7 +8,6 @@ import 'package:firebase/firebase.dart';
 import '../model/Diary.dart';
 import '../model/user.dart';
 
-// kullanıcı bilgileri güncellemesi
 
 class DiaryService {
   final CollectionReference userCollectionReference =
@@ -50,7 +49,6 @@ class DiaryService {
     return;
   }
 
-  // tarihe göre görevleri filtreleme
   Future<List<Diary>> getSameDateDiaries(DateTime first, String userId) {
     return diaryCollectionReference
         .where('entry_time',
