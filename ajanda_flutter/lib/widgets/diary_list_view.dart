@@ -10,7 +10,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-// görevlerin liste şeklinde sıralanması güne göre
 
 class DiaryListView extends StatelessWidget {
   const DiaryListView({
@@ -41,13 +40,11 @@ class DiaryListView extends StatelessWidget {
             child: SizedBox(
           width: MediaQuery.of(context).size.width * 0.4,
           child: (filteredDiaryList
-                  .isNotEmpty) // eğer gün içinde görev varsa-boş değilse- gösterilecek ekran
+                  .isNotEmpty) 
               ? ListView.builder(
                   itemCount: filteredDiaryList.length,
                   itemBuilder: (context, index) {
                     Diary diary = filteredDiaryList[index];
-                    // her bir görev kartının yapısı
-                    //effectli geliş cardların
                     return DelayedDisplay(
                       delay: Duration(milliseconds: 1),
                       fadeIn: true,
@@ -61,7 +58,6 @@ class DiaryListView extends StatelessWidget {
                     );
                   },
                 )
-              // eğer gün içinde herhangi bir görev yoksa gelecek ekran görünümü
               : ListView.builder(
                   itemCount: 1,
                   itemBuilder: (context, index) {
