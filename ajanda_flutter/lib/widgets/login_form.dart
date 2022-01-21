@@ -3,7 +3,6 @@ import 'package:ajanda_flutter/widgets/input_decorator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-// kullınıcı girişi ekranı
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
