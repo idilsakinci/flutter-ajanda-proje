@@ -2,7 +2,6 @@ import 'package:ajanda_flutter/model/Diary.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-// görev silme butonuna basınca gelen ekran
 
 class DeleteEntryDialog extends StatelessWidget {
   const DeleteEntryDialog({
