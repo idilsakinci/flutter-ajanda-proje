@@ -3,8 +3,6 @@ import 'package:ajanda_flutter/widgets/input_decorator.dart';
 import 'package:ajanda_flutter/widgets/login_form.dart';
 import 'package:flutter/material.dart';
 
-// giriş ve kayıt olma sayfası
-
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
