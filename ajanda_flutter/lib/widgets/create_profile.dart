@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-//üst menüdeki butonlar (kullanıcı iconu aktifliği, çıkış butonu)
-
 class CreateProfile extends StatelessWidget {
   const CreateProfile({
     Key? key,
@@ -39,7 +37,7 @@ class CreateProfile extends StatelessWidget {
                       backgroundColor: Colors.transparent,
                     ),
                   ),
-                  // profil resmine tıklayınca gelen avatarı ve ismi güncelleme ekranı
+                  
                   onTap: () {
                     showDialog(
                       context: context,
@@ -63,7 +61,6 @@ class CreateProfile extends StatelessWidget {
           SizedBox(
             width: 50,
           ),
-          //Çıkış butonu
           IconButton(
               onPressed: () {
                 FirebaseAuth.instance.signOut().then((value) {
