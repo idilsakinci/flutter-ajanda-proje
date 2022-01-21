@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner:
-            false, // anasayfasının köşesinde çıkan debug sembolü kaldırıldı.
+            false, 
         title: 'Make A Plan',
         theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
