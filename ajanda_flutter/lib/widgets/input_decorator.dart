@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// dekorasyon
 
 InputDecoration buildInputDecoration(String label, String hint) {
   return InputDecoration(
