@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'login_page.dart';
 
-// açılış sayfası
 
 class GettingStartedPage extends StatelessWidget {
   const GettingStartedPage({Key? key}) : super(key: key);
