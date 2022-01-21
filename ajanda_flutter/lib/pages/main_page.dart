@@ -12,7 +12,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
-// ana sayfa
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -36,13 +35,10 @@ class _MainPageState extends State<MainPage> {
     var earliestFilteredDiariesStrem;
 
     return Scaffold(
-      // Üst Başlık
       appBar: AppBar(
-        //Arka plan ve boyut
         backgroundColor: Colors.grey.shade100,
         toolbarHeight: 100,
         elevation: 4,
-        //Logo
         title: Padding(
           padding: EdgeInsets.only(left: 20.0),
           child: Row(
@@ -61,7 +57,6 @@ class _MainPageState extends State<MainPage> {
         actions: [
           Row(
             children: [
-              //En erken en geç seçim butonu
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: DropdownButton<String>(
@@ -113,7 +108,6 @@ class _MainPageState extends State<MainPage> {
               SizedBox(
                 width: 100,
               ),
-              //Profil Ekranı
               StreamBuilder<QuerySnapshot>(
                 stream:
                     FirebaseFirestore.instance.collection('users').snapshots(),
@@ -135,10 +129,8 @@ class _MainPageState extends State<MainPage> {
           )
         ],
       ),
-      // Sayfanın body kısmı ikiye bölündü
       body: Row(
         children: [
-          // Bir parçası
           Container(
             width: 400,
             child: Expanded(
@@ -207,14 +199,12 @@ class _MainPageState extends State<MainPage> {
                   ),
                 )),
           ),
-          //diğer parçası
           Expanded(
               flex: 10,
               child: DiaryListView(
                   listOfDiaries: _listOfDiaries, selectedDate: selectedDate))
         ],
       ),
-      // alttaki + butonu
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             showDialog(
