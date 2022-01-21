@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-// yeni görev içeriği
-
 class Diary {
   final String? id;
   final String? userId;
