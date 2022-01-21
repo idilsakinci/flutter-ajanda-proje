@@ -7,7 +7,6 @@ import 'package:mime_type/mime_type.dart';
 import 'dart:html' as html;
 import 'package:path/path.dart' as Path;
 
-// yeni görev ekleme ekranı (write new)
 
 class WriteDiaryDialog extends StatefulWidget {
   const WriteDiaryDialog({
@@ -47,7 +46,6 @@ class _WriteDiaryDialogState extends State<WriteDiaryDialog> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                // Discard butonu
                 Padding(
                   padding: const EdgeInsets.all(18.0),
                   child: TextButton(
@@ -58,7 +56,6 @@ class _WriteDiaryDialogState extends State<WriteDiaryDialog> {
                     },
                   ),
                 ),
-                // Done butonu
                 Padding(
                   padding: const EdgeInsets.all(18.0),
                   child: TextButton(
@@ -119,7 +116,6 @@ class _WriteDiaryDialogState extends State<WriteDiaryDialog> {
                   SizedBox(
                     width: 100,
                   ),
-                  // Tarih yazısı
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
